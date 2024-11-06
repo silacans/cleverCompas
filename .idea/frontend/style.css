@@ -1,0 +1,233 @@
+.home-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-page .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1512px;
+  height: 1015px;
+  position: relative;
+}
+
+.home-page .overlap {
+  position: absolute;
+  width: 1481px;
+  height: 511px;
+  top: 189px;
+  left: 31px;
+}
+
+.home-page .rectangle {
+  position: absolute;
+  width: 1481px;
+  height: 472px;
+  top: 0;
+  left: 0;
+  background-color: #e5e5dc70;
+  border-radius: 51px;
+}
+
+.home-page .connect-with-amazing {
+  position: absolute;
+  width: 481px;
+  top: 11px;
+  left: 44px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 62.4px;
+}
+
+.home-page .text-wrapper {
+  color: #07188c;
+}
+
+.home-page .span {
+  color: #d87605;
+}
+
+.home-page .element {
+  position: absolute;
+  width: 630px;
+  height: 428px;
+  top: 83px;
+  left: 811px;
+  object-fit: cover;
+}
+
+.home-page .join-us-easy {
+  position: absolute;
+  width: 660px;
+  top: 228px;
+  left: 71px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 31.2px;
+}
+
+.home-page .text-wrapper-2 {
+  font-family: "Adamina-Regular", Helvetica;
+  color: #000000;
+  font-size: 13px;
+  line-height: 16.9px;
+}
+
+.home-page .text-wrapper-3 {
+  color: #d87605;
+  font-size: 20px;
+  line-height: 26.0px;
+}
+
+.home-page .text-wrapper-4 {
+  color: #07188c;
+  font-size: 20px;
+  line-height: 26.0px;
+}
+
+.home-page .contact-us-for {
+  position: absolute;
+  width: 659px;
+  top: 895px;
+  left: 15px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 16.9px;
+}
+
+.home-page .text-wrapper-5 {
+  color: #000000;
+}
+
+.home-page .text-wrapper-6 {
+  color: #000000;
+  font-size: 20px;
+  line-height: 26.0px;
+}
+
+.home-page .text-wrapper-7 {
+  position: absolute;
+  width: 107px;
+  height: 41px;
+  top: 50px;
+  left: 375px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 31.2px;
+}
+
+.home-page .home {
+  position: absolute;
+  width: 102px;
+  height: 29px;
+  top: 57px;
+  left: 238px;
+}
+
+.home-page .text-wrapper-8 {
+  position: absolute;
+  width: 102px;
+  height: 29px;
+  top: -1px;
+  left: 0;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 31.2px;
+  white-space: nowrap;
+}
+
+.home-page .text-wrapper-9 {
+  position: absolute;
+  width: 195px;
+  height: 44px;
+  top: 128px;
+  left: 835px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 31.2px;
+}
+
+.home-page .ellipse {
+  position: absolute;
+  width: 246px;
+  height: 82px;
+  top: -1845px;
+  left: -1502px;
+}
+
+.home-page .register-sign-in {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  top: 55px;
+  left: 1088px;
+}
+
+.home-page .text-wrapper-10 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 31.2px;
+  white-space: nowrap;
+}
+
+.home-page .overlap-group {
+  position: absolute;
+  width: 172px;
+  height: 149px;
+  top: 5px;
+  left: 7px;
+}
+
+.home-page .compass-rose-png {
+  position: absolute;
+  width: 135px;
+  height: 120px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.home-page .text-wrapper-11 {
+  position: absolute;
+  width: 164px;
+  height: 31px;
+  top: 118px;
+  left: 8px;
+  transform: rotate(0.22deg);
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 26.0px;
+  white-space: nowrap;
+}
