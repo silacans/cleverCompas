@@ -1,0 +1,472 @@
+.about-US {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-US .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1512px;
+  height: 3021px;
+  position: relative;
+}
+
+.about-US .overlap {
+  position: absolute;
+  width: 159px;
+  height: 152px;
+  top: 791px;
+  left: 305px;
+  background-color: #e5e5dd;
+  border-radius: 79.5px / 76px;
+}
+
+.about-US .element {
+  position: absolute;
+  width: 124px;
+  height: 124px;
+  top: 14px;
+  left: 18px;
+  object-fit: cover;
+}
+
+.about-US .overlap-group {
+  position: absolute;
+  width: 156px;
+  height: 152px;
+  top: 797px;
+  left: 1082px;
+  background-color: #e5e5dd;
+  border-radius: 78px / 76px;
+}
+
+.about-US .img {
+  position: absolute;
+  width: 91px;
+  height: 109px;
+  top: 21px;
+  left: 32px;
+}
+
+.about-US .overlap-2 {
+  position: absolute;
+  width: 159px;
+  height: 152px;
+  top: 799px;
+  left: 685px;
+}
+
+.about-US .ellipse {
+  position: absolute;
+  width: 156px;
+  height: 152px;
+  top: 0;
+  left: 0;
+  background-color: #e5e5dd;
+  border-radius: 78px / 76px;
+}
+
+.about-US .submit-update-icon {
+  position: absolute;
+  width: 159px;
+  height: 100px;
+  top: 24px;
+  left: 0;
+}
+
+.about-US .overlap-3 {
+  position: absolute;
+  width: 1644px;
+  height: 227px;
+  top: -2px;
+  left: -23px;
+  background-color: #e5e5dd70;
+  border-radius: 20px;
+}
+
+.about-US .overlap-4 {
+  position: absolute;
+  width: 161px;
+  height: 142px;
+  top: 19px;
+  left: 23px;
+}
+
+.about-US .text-wrapper {
+  position: absolute;
+  width: 161px;
+  height: 26px;
+  top: 116px;
+  left: 0;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 26.0px;
+  white-space: nowrap;
+}
+
+.about-US .compass-rose-png {
+  position: absolute;
+  width: 134px;
+  height: 130px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.about-US .text-wrapper-2 {
+  position: absolute;
+  width: 297px;
+  height: 112px;
+  top: 6px;
+  left: 641px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: 83.2px;
+}
+
+.about-US .line {
+  position: absolute;
+  width: 103px;
+  height: 12px;
+  top: 130px;
+  left: 727px;
+}
+
+.about-US .overlap-5 {
+  position: absolute;
+  width: 283px;
+  height: 154px;
+  top: 958px;
+  left: 243px;
+}
+
+.about-US .user-friendly {
+  position: absolute;
+  width: 222px;
+  height: 31px;
+  top: 0;
+  left: 2px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 31.2px;
+}
+
+.about-US .simple-and-intuitive {
+  position: absolute;
+  width: 283px;
+  height: 128px;
+  top: 26px;
+  left: 0;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #d87605;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 26.0px;
+}
+
+.about-US .text-wrapper-3 {
+  position: absolute;
+  width: 444px;
+  height: 132px;
+  top: 659px;
+  left: 545px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 52.0px;
+}
+
+.about-US .dynamic-updates {
+  position: absolute;
+  width: 251px;
+  height: 156px;
+  top: 958px;
+  left: 637px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 31.2px;
+}
+
+.about-US .span {
+  color: #07188c;
+}
+
+.about-US .text-wrapper-4 {
+  color: #07188c;
+  font-size: 20px;
+  line-height: 26.0px;
+}
+
+.about-US .text-wrapper-5 {
+  color: #d87605;
+  font-size: 20px;
+  line-height: 26.0px;
+}
+
+.about-US .welcome-to-clever {
+  position: absolute;
+  width: 1368px;
+  top: 291px;
+  left: 106px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 46.8px;
+}
+
+.about-US .text-wrapper-6 {
+  color: #02082c;
+  font-size: 20px;
+  line-height: 26.0px;
+}
+
+.about-US .text-wrapper-7 {
+  color: #02082c;
+  font-size: 32px;
+  line-height: 41.6px;
+}
+
+.about-US .text-wrapper-8 {
+  color: #02082c;
+  font-size: 24px;
+  line-height: 31.2px;
+}
+
+.about-US .efficiency-in {
+  position: absolute;
+  width: 289px;
+  height: 145px;
+  top: 959px;
+  left: 1014px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 31.2px;
+}
+
+.about-US .overlap-6 {
+  position: absolute;
+  width: 1260px;
+  height: 1207px;
+  top: 1423px;
+  left: 139px;
+}
+
+.about-US .overlap-7 {
+  position: absolute;
+  width: 1260px;
+  height: 1204px;
+  top: 3px;
+  left: 0;
+}
+
+.about-US .rectangle {
+  position: absolute;
+  width: 336px;
+  height: 332px;
+  top: 3px;
+  left: 60px;
+}
+
+.about-US .rectangle-2 {
+  position: absolute;
+  width: 336px;
+  height: 332px;
+  top: 0;
+  left: 482px;
+}
+
+.about-US .time-tracking {
+  position: absolute;
+  width: 263px;
+  top: 46px;
+  left: 526px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.6px;
+}
+
+.about-US .text-wrapper-9 {
+  color: #000000;
+  font-size: 20px;
+  line-height: 26.0px;
+}
+
+.about-US .text-wrapper-10 {
+  font-family: "Adamina-Regular", Helvetica;
+  color: #000000;
+  font-size: 20px;
+  line-height: 26.0px;
+}
+
+.about-US .personalized {
+  position: absolute;
+  width: 263px;
+  top: 34px;
+  left: 93px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.6px;
+}
+
+.about-US .cristobel-navarro {
+  position: absolute;
+  width: 468px;
+  height: 279px;
+  top: 636px;
+  left: 162px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 26.0px;
+}
+
+.about-US .gaganjit-virdi-ryan {
+  position: absolute;
+  width: 352px;
+  height: 273px;
+  top: 639px;
+  left: 438px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 26.0px;
+}
+
+.about-US .group-of-people-icon {
+  position: absolute;
+  width: 532px;
+  height: 423px;
+  top: 591px;
+  left: 717px;
+}
+
+.about-US .rectangle-3 {
+  position: absolute;
+  width: 1260px;
+  height: 103px;
+  top: 402px;
+  left: 0;
+  background-color: #d87605b2;
+  border-radius: 30px;
+}
+
+.about-US .our-team-the-clever {
+  position: absolute;
+  width: 1080px;
+  height: 806px;
+  top: 398px;
+  left: 77px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 52.0px;
+}
+
+.about-US .text-wrapper-11 {
+  color: #000000;
+  font-size: 24px;
+  line-height: 31.2px;
+}
+
+.about-US .text-wrapper-12 {
+  color: #000000;
+  font-size: 32px;
+  line-height: 41.6px;
+}
+
+.about-US .feedback-performance-wrapper {
+  position: absolute;
+  width: 336px;
+  height: 332px;
+  top: 0;
+  left: 913px;
+  background-image: url(./img/rectangle-57.svg);
+  background-size: 100% 100%;
+}
+
+.about-US .feedback-performance {
+  position: absolute;
+  width: 314px;
+  top: 31px;
+  left: 12px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.6px;
+}
+
+.about-US .overlap-8 {
+  position: absolute;
+  width: 517px;
+  height: 253px;
+  top: 1144px;
+  left: 510px;
+}
+
+.about-US .text-wrapper-13 {
+  position: absolute;
+  width: 517px;
+  top: 61px;
+  left: 0;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 52.0px;
+}
+
+.about-US .squiggle-cutters {
+  position: absolute;
+  width: 250px;
+  height: 253px;
+  top: 0;
+  left: 130px;
+}

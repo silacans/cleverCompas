@@ -1,0 +1,188 @@
+.tutor-payroll {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.tutor-payroll .tutor-payroll-wrapper {
+  width: 1512px;
+  height: 1015px;
+}
+
+.tutor-payroll .div {
+  position: relative;
+  height: 982px;
+  top: 17px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.tutor-payroll .overlap-group {
+  position: absolute;
+  width: 751px;
+  height: 390px;
+  top: 147px;
+  left: 5px;
+  background-color: #e5e5dc99;
+  border-radius: 51px;
+}
+
+.tutor-payroll .rectangle {
+  position: absolute;
+  width: 690px;
+  height: 77px;
+  top: 13px;
+  left: 27px;
+}
+
+.tutor-payroll .tutor-timesheet-date {
+  position: absolute;
+  width: 519px;
+  top: 17px;
+  left: 41px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.tutor-payroll .contact-us-for {
+  position: absolute;
+  width: 659px;
+  top: 846px;
+  left: 15px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 16.9px;
+}
+
+.tutor-payroll .text-wrapper {
+  color: #07188c;
+}
+
+.tutor-payroll .span {
+  font-family: "Adamina-Regular", Helvetica;
+  color: #000000;
+}
+
+.tutor-payroll .text-wrapper-2 {
+  color: #000000;
+  font-size: 20px;
+  line-height: 26.0px;
+}
+
+.tutor-payroll .text-wrapper-3 {
+  position: absolute;
+  width: 107px;
+  height: 41px;
+  top: 50px;
+  left: 375px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 31.2px;
+}
+
+.tutor-payroll .ellipse {
+  position: absolute;
+  width: 246px;
+  height: 82px;
+  top: -1948px;
+  left: 678px;
+}
+
+.tutor-payroll .overlap {
+  position: absolute;
+  width: 358px;
+  height: 375px;
+  top: 160px;
+  left: 1001px;
+  background-image: url(./img/rectangle-42.svg);
+  background-size: 100% 100%;
+}
+
+.tutor-payroll .hours-tracked-tutor {
+  position: absolute;
+  width: 323px;
+  top: 12px;
+  left: 17px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.tutor-payroll .clock {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  top: 119px;
+  left: 51px;
+  object-fit: cover;
+}
+
+.tutor-payroll .overlap-2 {
+  position: absolute;
+  width: 169px;
+  height: 139px;
+  top: 5px;
+  left: 7px;
+}
+
+.tutor-payroll .compass-rose-png {
+  position: absolute;
+  width: 135px;
+  height: 120px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.tutor-payroll .text-wrapper-4 {
+  position: absolute;
+  width: 161px;
+  height: 26px;
+  top: 113px;
+  left: 8px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 26.0px;
+  white-space: nowrap;
+}
+
+.tutor-payroll .home {
+  position: absolute;
+  width: 102px;
+  height: 29px;
+  top: 57px;
+  left: 232px;
+}
+
+.tutor-payroll .text-wrapper-5 {
+  position: absolute;
+  width: 102px;
+  height: 29px;
+  top: -1px;
+  left: 0;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 31.2px;
+  white-space: nowrap;
+}

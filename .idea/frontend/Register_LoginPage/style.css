@@ -1,0 +1,272 @@
+.register-sign-up {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.register-sign-up .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1512px;
+  height: 982px;
+  position: relative;
+}
+
+.register-sign-up .overlap {
+  position: absolute;
+  width: 1644px;
+  height: 227px;
+  top: -31px;
+  left: -102px;
+  background-color: #e5e5dd70;
+  border-radius: 20px;
+}
+
+.register-sign-up .overlap-group {
+  position: absolute;
+  width: 164px;
+  height: 161px;
+  top: 31px;
+  left: 119px;
+}
+
+.register-sign-up .compass-rose-png {
+  position: absolute;
+  width: 137px;
+  height: 131px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.register-sign-up .text-wrapper {
+  position: absolute;
+  width: 164px;
+  height: 31px;
+  top: 129px;
+  left: 0;
+  transform: rotate(0.22deg);
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 26.0px;
+  white-space: nowrap;
+}
+
+.register-sign-up .text-wrapper-2 {
+  position: absolute;
+  width: 913px;
+  height: 118px;
+  top: 53px;
+  left: 638px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: 83.2px;
+}
+
+.register-sign-up .text-wrapper-3 {
+  position: absolute;
+  width: 304px;
+  top: 278px;
+  left: 130px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 26.0px;
+}
+
+.register-sign-up .text-wrapper-4 {
+  position: absolute;
+  width: 269px;
+  top: 280px;
+  left: 907px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 26.0px;
+}
+
+.register-sign-up .overlap-group-2 {
+  position: absolute;
+  width: 411px;
+  height: 476px;
+  top: 357px;
+  left: 860px;
+}
+
+.register-sign-up .rectangle {
+  position: absolute;
+  width: 296px;
+  height: 30px;
+  top: 26px;
+  left: 26px;
+  background-color: #d9d9d9;
+  opacity: 0.6;
+}
+
+.register-sign-up .email-address {
+  position: absolute;
+  width: 411px;
+  top: 0;
+  left: 0;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 16.9px;
+}
+
+.register-sign-up .span {
+  color: #07188c;
+}
+
+.register-sign-up .text-wrapper-5 {
+  color: #1e1e1e;
+}
+
+.register-sign-up .rectangle-2 {
+  position: absolute;
+  width: 296px;
+  height: 30px;
+  top: 93px;
+  left: 26px;
+  background-color: #d9d9d9;
+  opacity: 0.6;
+}
+
+.register-sign-up .img {
+  position: absolute;
+  width: 295px;
+  height: 49px;
+  top: 187px;
+  left: 20px;
+}
+
+.register-sign-up .text-wrapper-6 {
+  position: absolute;
+  width: 89px;
+  top: 195px;
+  left: 124px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 26.0px;
+  white-space: nowrap;
+}
+
+.register-sign-up .overlap-2 {
+  position: absolute;
+  width: 304px;
+  height: 206px;
+  top: 372px;
+  left: 145px;
+}
+
+.register-sign-up .rectangle-3 {
+  position: absolute;
+  width: 295px;
+  height: 49px;
+  top: 157px;
+  left: 9px;
+}
+
+.register-sign-up .register-page {
+  position: absolute;
+  width: 304px;
+  height: 151px;
+  top: 11px;
+  left: 0;
+}
+
+.register-sign-up .frame {
+  width: 273px;
+  height: 69px;
+}
+
+.register-sign-up .frame-2 {
+  display: flex;
+  width: 296px;
+  height: 30px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 0px 8px 0px 257px;
+  position: relative;
+  top: 27px;
+  left: 8px;
+  background-color: #d9d9d999;
+}
+
+.register-sign-up .chevron-down {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.register-sign-up .please-select {
+  position: absolute;
+  width: 273px;
+  top: -1px;
+  left: 0;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 16.9px;
+}
+
+.register-sign-up .text-wrapper-7 {
+  color: #000000;
+}
+
+.register-sign-up .text-wrapper-8 {
+  position: absolute;
+  width: 89px;
+  top: 167px;
+  left: 107px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 26.0px;
+  white-space: nowrap;
+}
+
+.register-sign-up .text-wrapper-9 {
+  position: absolute;
+  width: 166px;
+  top: 0;
+  left: 0;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #07188c;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20.8px;
+}
+
+.register-sign-up .website {
+  position: absolute;
+  width: 225px;
+  height: 260px;
+  top: 617px;
+  left: 76px;
+}
