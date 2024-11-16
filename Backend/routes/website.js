@@ -13,7 +13,29 @@ router.get('/:id',(req, res) => {
     res.json({mssg: 'GET a single'})
 })
 
-//missing a POST a new website (with try and catch)
+// POST a new website
+router.post('/', async (req, res) => {
+  const { subject, username, role, duration, date, email, password, phoneNumber, ratePerHour } = req.body;
+
+  try {
+    const website = await Website.create({
+      subject,
+      username,
+      role,
+      duration,
+      date,
+      email,
+      password,
+      phoneNumber,
+      ratePerHour,
+    })
+
+    res.status(200).json(website)
+  } catch (error) {
+    res.status(400).json({ error: error.message })
+  }
+})
+
 
 // DELETE a {thing}
 router.delete('/:id', (req, res) => {
