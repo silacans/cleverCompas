@@ -5,27 +5,20 @@ const Schema = mongoose.Schema
 const websiteSchema = new Schema({
   subject: {
     type: String,
-    required: true //e.g. Math, Science. History
+    required: false //e.g. Math, Science. History, choose what is applicable
   },
-  tutorName: {
+  username: {
     type: String,
-    required: true //name of the tutor
+    required: true //name of the user, then filters the userinto their role
   },
-  studentName: {
+  role: {
     type: String,
-    required: true //name of the student
-  },
-  parentName: {
-    type: String,
-    required: true // name of the parent
+    required: true,
+    enum: ['student', 'tutor', 'parent']
   },
   duration: {
     type: Number,
     required: true // duration of the session in hours
-  },
-  ratePerHour: {
-    type: Number,
-    required: true // cost of the session per hour
   },
   date: {
     type: Date,
@@ -36,10 +29,26 @@ const websiteSchema = new Schema({
     required: true, // email of tutor/student/parent 
     unique: true //makes sure there aren't duplicates in the Database
   },
-  password : {
+  password: {
     type: String,
     required: true, //Password
+  },
+  phoneNumber: {
+    type: String,
+    required: false // phone number is optional
+  },
+  ratePerHour: {
+    type: Number,
+    required: function () { return this.role === 'tutor'; }, // Only required for tutors
+    validate: {
+      validator: function (value) {
+        // Ensure ratePerHour is only set for tutors
+        return this.role === 'tutor' || value == null;
+      },
+      message: 'Only tutors can have a ratePerHour.'
+    }
   }
 }, { timestamps: true })
+
 
 module.exports = mongoose.model('Website', websiteSchema)
