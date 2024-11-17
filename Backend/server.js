@@ -1,7 +1,8 @@
-
 require('dotenv').config()
+
+
 const express = require('express')
-const routes = require('./routes/workouts')
+const routes = require('./routes/routes.js') 
 
 //creating an express app
 const app = express()
@@ -13,7 +14,7 @@ app.use((req, res, next) => {
 })
 
 //route handler
-app.use('/api/workouts', routes)
+app.use('/api/routes', routes)
 
 
 //listing for request 
