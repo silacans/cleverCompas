@@ -9,7 +9,7 @@ const websiteSchema = new Schema({
   },
   username: {
     type: String,
-    required: true //name of the user, then filters the userinto their role
+    required: true //name of the user, then filters the user into their role
   },
   role: {
     type: String,
