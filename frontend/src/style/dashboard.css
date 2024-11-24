@@ -1,0 +1,129 @@
+/* dashboard.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  .dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #34495e;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 15px 0;
+  }
+  
+  .menu li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .menu li a.active,
+  .menu li a:hover {
+    background: #2c3e50;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: #ecf0f1;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .topbar .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .topbar .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .widgets {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .widget {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .widget h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .widget p {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .content-card {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 48%;
+  }
+  
+  .content-card h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
