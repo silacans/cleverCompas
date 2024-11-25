@@ -16,7 +16,7 @@ const getStudent = async (req, res) => {
     return res.status(404).json({error: 'No such student'})
   }
 
-  const student = await Student.findById(id) //wont work fully
+  const student = await Student.findById(id) //wont work fully, maybe now
 
   if(!student) {
     return res.status(404).json({error: 'No such student'})
