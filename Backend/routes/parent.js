@@ -1,47 +1,28 @@
 const express = require('express')
-const Parent = require('../Models/parentModel')
+//const Parent = require('../Models/parentModel')
+const {
+  createParent,
+  getParents,
+  getParent,
+  deleteParent,
+  updateParent
+} = require('../controllers/parentController')
 
 const router = express.Router()
 
 //GET all {parents}
-router.get('/', (req, res) => {
-    res.json({mssg: 'GET all parents'})
-})
+router.get('/', getParents)
 
 //GET a single {parent}
-router.get('/:id',(req, res) => {
-    res.json({mssg: 'GET a single parent'})
-})
+router.get('/:id', getParent)
 
 // POST a new parent
-router.post('/', async (req, res) => {
-  const {subject, username, email, password, phoneNumber, date } = req.body;
-
-  try {
-    const parent = await Parent.create({
-      subject,
-      username,
-      email,
-      password,
-      phoneNumber,
-      date,
-    })
-
-    res.status(200).json(parent)
-  } 
-  catch (error) {
-    res.status(400).json({ error: error.message})
-  }
-})
+router.post('/', createParent)
 
 // DELETE a {parent}
-router.delete('/:id', (req, res) => {
-  res.json({mssg: 'DELETE a parent'})
-})
+router.delete('/:id', deleteParent)
 
 // UPDATE a {parent}
-router.patch('/:id', (req, res) => {
-  res.json({mssg: 'UPDATE a parent'})
-})
+router.patch('/:id', updateParent)
 
 module.exports = router
