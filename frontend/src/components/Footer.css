@@ -1,65 +1,105 @@
-/* footer.css */
-
+/* General Footer Styling */
 .footer {
-    background-color: #34495e;
-    color: #ecf0f1;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9em;
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 60px 20px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* Footer Container */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Footer Sections */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Footer Logo */
+.footer-logo a {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #e67e22;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-logo a:hover {
+  color: #f39c12;
+}
+
+/* Copyright Section */
+.footer-logo .footer-copyright {
+  font-size: 0.8em;
+  color: #bdc3c7;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Need Support Section */
+.footer-support h3,
+.footer-general h3,
+.footer-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #f39c12;
+}
+
+/* Email Link Styling */
+.footer-support p a {
+  color: #ecf0f1; /* Matches footer text color */
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s;
+}
+
+.footer-support p a:hover {
+  color: #e67e22; /* Changes color on hover */
+}
+
+/* General Links */
+.footer-general a {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+
+.footer-general a:hover {
+  color: #e67e22;
+}
+
+/* Social Media Links */
+.footer-icons {
+  display: flex;
+  flex-direction: row; /* Keep icons horizontal */
+  justify-content: center; /* Center icons */
+  align-items: center; /* Align vertically */
+  gap: 15px; /* Space between icons */
+}
+
+.footer-icons a {
+  color: #ecf0f1;
+  font-size: 24px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.footer-icons a:hover {
+  color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
   }
-  
-  .footerContainer {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footerLogo a {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #e67e22;
-    text-decoration: none;
-    margin-bottom: 10px;
-  }
-  
-  .footerLinks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 10px;
-  }
-  
-  .footerLinks a {
-    color: #ecf0f1;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footerLinks a:hover {
-    color: #e67e22;
-  }
-  
-  .footerSocial {
-    margin-bottom: 10px;
-  }
-  
-  .footerSocial a {
-    margin: 0 10px;
-    color: #ecf0f1;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footerSocial a:hover {
-    color: #e67e22;
-  }
-  
-  .footerCopyright {
-    font-size: 0.8em;
-    color: #bdc3c7;
-  }
-  
+}

@@ -5,24 +5,47 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footerContainer">
-        <div className="footerLogo">
-          <Link to="/">CleverCampas</Link>
+      <div className="footer-container">
+        {/* Footer Logo and Copyright */}
+        <div className="footer-section footer-logo">
+          <Link to="/">CleverCampus</Link>
+          <div className="footer-copyright">
+            &copy; {new Date().getFullYear()} CleverCampus. All rights reserved.
+          </div>
         </div>
-        <div className="footerLinks">
+
+        {/* Need Support Section */}
+        <div className="footer-section footer-support">
+          <h3>Need Support?</h3>
+          <p>Email: <a href="mailto:support@clevercampus.com">support@clevercampus.com</a></p>
+          <p>Phone: +1 (800) 123-4567</p>
+        </div>
+
+        {/* General Section */}
+        <div className="footer-section footer-general">
+          <h3>General</h3>
           <Link to="/about">About Us</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/faq">FAQ</Link>
-          <Link to="/terms">Terms of Service</Link>
-          <Link to="/privacy">Privacy Policy</Link>
         </div>
-        <div className="footerSocial">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-        <div className="footerCopyright">
-          &copy; {new Date().getFullYear()} TutorPro. All rights reserved.
+
+        {/* Social Media Section */}
+        <div className="footer-section footer-social">
+        <h3 className="footer-title">Follow Us</h3>
+          <div className="footer-icons"> 
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <i className="bi bi-facebook"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <i className="bi bi-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <i className="bi bi-linkedin"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <i className="bi bi-instagram"></i>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

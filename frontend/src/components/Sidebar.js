@@ -1,21 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react'; // for using the state to make the sidebar toggle and for usefect which helps side bar go away evrytime we new page is loaded
+import { Link , useLocation} from 'react-router-dom';
 import './Sidebar.css';
 
 const Sidebar = ({ children }) => {
-  return (
-    <div className="layout-container">
-      <aside className="sidebar">
-        <ul className="sidebar-links">
-          <li><Link to="/dashboard">Dashboard</Link></li>
-          <li><Link to="/Schedule">Schedule</Link></li>
-          <li><Link to="/students">Example</Link></li>
+    const [isCollapsed, setIsCollapsed] = useState(false);
+    const location = useLocation();
 
-        </ul>
-      </aside>
-      <main className="content">{children}</main>
-    </div>
-  );
-};
+    // Automatically collapse the sidebar when the location changes
+    useEffect(() => {
+    setIsCollapsed(true);
+  }, [location]);
 
-export default Sidebar;
+    const toggleSidebar = () => {
+      setIsCollapsed(!isCollapsed);
+    };
+  
+    return (
+      <div className={`layout-container ${isCollapsed ? 'collapsed' : ''}`}>
+        <aside className="sidebar">
+          <button className="toggle-button" onClick={toggleSidebar}>
+            {isCollapsed ? '>' : '<'}
+          </button>
+          <ul className="sidebar-links">
+            <li><Link to="/dashboard">Dashboard</Link></li>
+            <li><Link to="/schedule">Schedule</Link></li>
+            <li><Link to="/example">Example</Link></li>
+          </ul>
+        </aside>
+        <main className="content">{children}</main>
+      </div>
+    );
+  };
+  
+  export default Sidebar;

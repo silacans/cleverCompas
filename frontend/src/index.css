@@ -9,3 +9,57 @@ header
   background-color: aliceblue;
 
 }
+/* General Page Styling */
+.about-page, .contact-page, .faq-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-page h1, .contact-page h1, .faq-page h1 {
+  font-size: 2em;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.about-page p, .contact-page p, .faq-page p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-page li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.contact-page a {
+  color: #27ae60;
+  text-decoration: none;
+}
+
+.contact-page a:hover {
+  text-decoration: underline;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 1.4em;
+  color: #34495e;
+}
+
+.faq-item p {
+  font-size: 1.1em;
+  color: #555;
+}
