@@ -1,12 +1,43 @@
-/* Css for the home page */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
-  background: #f9f9f9;
+/* Home Page Container */
+.home {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /* Full height */
+  background-color: #f9f9f9;
+}
+
+/* Sidebar Styling */
+.home.with-sidebar .sidebar {
+  width: 250px; /* Sidebar width */
+  background-color: #34495e; /* Sidebar background */
+  color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #e67e22;
+}
+
+/* Main Content */
+.home-main-content {
+  flex: 1;
+  padding: 20px;
 }
 
 .hero {
@@ -18,11 +49,13 @@ body {
 .hero-content h1 {
   font-size: 2.5em;
   color: #34495e;
+  margin-bottom: 20px;
 }
 
 .hero-content p {
   font-size: 1.2em;
-  color: #555;
+  color: #555555;
+  margin-bottom: 18px;
 }
 
 .cta-button {
@@ -33,6 +66,7 @@ body {
   border-radius: 5px;
   text-decoration: none;
   transition: background 0.3s;
+
 }
 
 .cta-button:hover {
@@ -51,13 +85,4 @@ body {
   max-width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.footer {
-  margin-top: auto;
-  background-color: #34495e;
-  color: #ecf0f1;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 0.9em;
 }

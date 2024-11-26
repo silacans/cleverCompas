@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 //Pages and components 
-
+import Login from './Pages/login';
 import Home from './Pages/home'
 import Dashboard from './Pages/dashBoard'
 import Schedule from './Pages/Schedule'
@@ -10,6 +10,8 @@ import Contact from './Pages/contact';
 import FAQ from './Pages/Faq';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ProtectedRoute from './components/ProtectedRoute';
+import SignUp from './Pages/signup';
 
 function App() {
   return (
@@ -18,12 +20,25 @@ function App() {
         <Navbar />
           <div className='pages'>
             <Routes>
+               {/* Add other routes here, as we add more pages we need to import tham and create a route for them 
               <Route path="/"    element={<Home />}  />
               <Route path="/Dashboard" element={<Dashboard />} />
               <Route path="/Schedule" element={<Schedule />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/faq" element={<FAQ />} />
+              <Route path="/login" element={<Login />} />  */}
+
+               {/* Open Routes */}
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/faq" element={<FAQ />} />
+               {/* Protected Routes */}
+             <Route path="/dashboard" element={<ProtectedRoute> <Dashboard /> </ProtectedRoute> }/>
+             <Route path="/Schedule" element={<ProtectedRoute> <Schedule /> </ProtectedRoute> }/>
 
 
             </Routes>
