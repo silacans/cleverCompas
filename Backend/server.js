@@ -1,40 +1,43 @@
-require('dotenv').config()
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+require('dotenv').config(); // To load environment variables
 
+// Importing Routes
+const authRoutes = require('./routes/auth');
+const profileRoutes = require('./routes/profile');
 
+const app = express();
 
-const express = require('express')
-const mongoose = require('mongoose')
-const routes = require('./routes/website.js') 
+// Middleware
+app.use(cors()); // Enable CORS for all requests 
+app.use(bodyParser.json()); // Parse JSON request bodies
 
-//creating an express app
-const app = express()
+// Database Connection
+const DB_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/mean-app';
+mongoose
+    .connect(DB_URI)
+    .then(() => console.log('Connected to MongoDB'))
+    .catch((err) => console.error('MongoDB connection error:', err));
 
-app.use(express.json())
+// Routes
+app.use('/api', authRoutes); // Authentication routes
+app.use('/api', profileRoutes); //protected routes as we make more routs we add it here
 
-//middleware
-app.use((req, res, next) => {
-    console.log(req.path, req.method)
-    next()
-})
+// Root Route
+app.get('/', (req, res) => {
+  res.send('Welcome to the Clever Campas');
+});
 
-//route handler
-app.use('/api/website', routes)
+// Error Handling Middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ message: 'Internal Server Error' });
+});
 
-// connecting to DB
-mongoose.connect(process.env.MONGO_URI)
-.then(()=>{
-    //listing for request once connected to the DB
-app.listen(process.env.PORT, () => {
-    console.log('Connected to DB, Listing port', process.env.PORT)
-    
-    }) 
-    
-
-
-})
-.catch((error) => {
-    console.log(error)
-})
-
-
-
+// Start Server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
