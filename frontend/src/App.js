@@ -5,6 +5,9 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './Pages/home'
 import Dashboard from './Pages/dashBoard'
 import Schedule from './Pages/Schedule'
+import About from './Pages/about';
+import Contact from './Pages/contact';
+import FAQ from './Pages/Faq';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -18,7 +21,9 @@ function App() {
               <Route path="/"    element={<Home />}  />
               <Route path="/Dashboard" element={<Dashboard />} />
               <Route path="/Schedule" element={<Schedule />} />
-              
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/faq" element={<FAQ />} />
 
 
             </Routes>
