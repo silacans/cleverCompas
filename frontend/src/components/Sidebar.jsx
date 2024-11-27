@@ -6,16 +6,58 @@ const Sidebar = ({ children }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const [role, setRole] = useState(null); // State to store the user's role
 
   // Automatically collapse the sidebar when the location changes
   useEffect(() => {
     setIsCollapsed(true);
   }, [location]);
 
+
+  // Fetch role
+  useEffect(() => {
+    const fetchUserRole = async () => {
+      try {
+        const token = localStorage.getItem('token');
+        if (!token) {
+          navigate('/login'); // Redirect to login if no token is found
+          return;
+        }
+
+        const response = await fetch('http://localhost:4000/api/user', {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch user data');
+        }
+
+        const data = await response.json();
+        setRole(data.role); // Set the user's role (student/tutor)
+      } catch (error) {
+        console.error('Error fetching user role:', error);
+        navigate('/login'); // Redirect to login on error
+      }
+    };
+
+    fetchUserRole();
+  }, [navigate]); 
+
   const toggleSidebar = () => {
     setIsCollapsed(!isCollapsed);
   };
 
+
+  //  Dashboard redirection based on role
+  const handleDashboardClick = () => {
+    if (role === 'tutor') {
+      navigate('/TutordashBoard');
+    } else if (role === 'student') {
+      navigate('studentDashboard');
+    } else {
+      console.error('Unknown role:', role);
+    }
+  };
 
   // This is for the logout button functions
   const handleLogout = () => {
@@ -32,7 +74,15 @@ const Sidebar = ({ children }) => {
         {!isCollapsed && (
           <>
           <ul className="sidebar-links">
-            <li><Link to="/dashboard">Dashboard</Link></li>
+            
+
+            <li>
+                <button onClick={handleDashboardClick} className="dashboard-link">
+                  Dashboard
+                </button>
+              </li>
+
+
             <li><Link to="/schedule">Schedule</Link></li>
             <li><Link to="/Notification">Notification</Link></li> {/* Need to add pages */}
           </ul>
