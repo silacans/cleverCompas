@@ -86,3 +86,29 @@
 .content:not(.expanded) {
   margin-left: 250px; /* Default sidebar width */
 }
+
+
+/* Logout Button Styling */
+.logout-button {
+  display: block;
+  margin: 20px auto; /* Center the button */
+  padding: 10px 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #e74c3c; /* Red background to stand out */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  transform: scale(1.05); /* Slight scale effect */
+}
+
+.logout-button:active {
+  transform: scale(0.95); /* Slight press-in effect */
+}
