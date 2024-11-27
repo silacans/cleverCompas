@@ -34,6 +34,7 @@
 
 .sidebar-links li {
   margin: 20px 0; /* Increase spacing between links */
+
 }
 
 .sidebar-links li a {
@@ -53,7 +54,10 @@
   color: #ffffff;
   transform: translateX(5px);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+  
 }
+
+
 
 /* Toggle Button Styling */
 .toggle-button {
@@ -124,4 +128,29 @@
 
 .logout-button:active {
   transform: scale(0.95); /* Slight press-in effect */
+}
+
+/* Dashboard Button Styling */
+.dashboard-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: block;
+  text-align: left;
+  background: none; /* Match default links' background */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.dashboard-link:hover {
+  background-color: #e67e22;
+  color: #ffffff;
+  transform: translateX(5px);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding-right: 60px; /* Extend background to the right */
 }
