@@ -11,7 +11,7 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "What is CleverCampus?",
+      question: "What is Clever Compass?",
       answer: "CleverCampus is a platform designed to help students, teachers, and professionals organize their academic and professional lives.",
     },
     {
@@ -19,7 +19,7 @@ const FAQ = () => {
       answer: "You can sign up on our Sign Up page with your email address and a secure password.",
     },
     {
-      question: "Is CleverCampus free?",
+      question: "Is Clever Compass free?",
       answer: "CleverCampus offers both free and premium plans. Check out our pricing page for more details.",
     },
     {
@@ -43,7 +43,7 @@ const FAQ = () => {
       answer: "After each session, you'll have the opportunity to rate and leave a review for your tutor on their profile page.",
     },
     {
-      question: "Is my data secure on CleverCampus?",
+      question: "Is my data secure on Clever Compass?",
       answer: "Yes, we use industry-standard encryption and security measures to protect your data.",
     },
     {
